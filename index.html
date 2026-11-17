@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#100d12"><meta name="description" content="A little universe made with love, just for Bhavuuu.">
+<title>The Girl Who Owns My Heart ❤️</title>
+<link rel="icon" href="assets/icons/heart.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="passwordGate" class="gate password-gate">
+  <div class="doodle orbit">🔒 ♡ ✦</div>
+  <p class="eyebrow">A LITTLE UNIVERSE, JUST FOR YOU</p>
+  <h1>This world has a<br><em>secret entrance</em> ❣️</h1>
+  <p>Enter the password to unlock your surprise.</p>
+  <form id="passwordForm" class="password-form">
+    <label class="sr-only" for="sitePasswordInput">Website password</label>
+    <input id="sitePasswordInput" type="password" autocomplete="current-password" placeholder="Enter password" required>
+    <button class="primary" type="submit">Unlock my universe ❣️</button>
+  </form>
+  <p id="passwordError" class="password-error" role="alert" aria-live="polite"></p>
+  <p class="tiny">A little secret, protected with love.</p>
+</div>
+<div id="countdown" class="gate hidden">
+  <div class="doodle orbit">♡ ✦ ♡</div><p class="eyebrow">A LITTLE SECRET IS GROWING...</p>
+  <h1>Something magical is waiting for you,<br><em id="gateName">Bhavuuu</em> ❣️</h1>
+  <p id="gateSubtitle">A little universe made with love is getting ready...</p>
+  <button id="countdownMusicBtn" class="secondary countdown-music-btn" type="button">♫ Play suspense music</button>
+  <p id="countdownMusicHint" class="tiny countdown-music-hint">Suspense music will try to play automatically. If your browser blocks it, tap the music button.</p>
+  <div class="timer" aria-label="Countdown"><div><b id="days">00</b><span>Days</span></div><div><b id="hours">00</b><span>Hours</span></div><div><b id="minutes">00</b><span>Minutes</span></div><div><b id="seconds">00</b><span>Seconds</span></div></div>
+  <p class="tiny">Made with an unreasonable amount of love ♡</p>
+</div>
+<section id="birthdayIntro" class="intro birthday-screen hidden">
+  <div id="birthdayHearts" class="birthday-hearts" aria-hidden="true"></div>
+  <p class="eyebrow">✨ TODAY THE WHOLE UNIVERSE CELEBRATES YOU ✨</p>
+  <h1 class="birthday-title">HAPPY BIRTHDAY,<br><em id="introName">My Bhavuuu</em> ❣️</h1>
+  <p class="birthday-subtitle">A whole day, a million wishes, and all my love for you. 💗</p>
+  <div class="birthday-cake-wrap" id="birthdayCake">
+    <div class="cake-plate"></div>
+    <div class="birthday-cake-art">
+      <div class="cake-top"><span class="berry">●</span><span class="berry">●</span><span class="berry">●</span></div>
+      <div class="cake-layer cake-layer-top"><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="cake-layer cake-layer-bottom"><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="cake-drips"><b></b><b></b><b></b><b></b><b></b></div>
+      <div class="cake-candles"><span class="candle"><i class="flame"></i></span><span class="candle"><i class="flame"></i></span><span class="candle"><i class="flame"></i></span></div>
+      <div class="cake-sprinkles">✦　·　✧　·　✦</div>
+    </div>
+  </div>
+  <p id="cakeMessage" class="cake-message">Make a wish, Bhavuuu! Then blow out your candles. 🕯️</p>
+  <div class="birthday-actions">
+    <button id="birthdayMusicBtn" class="secondary birthday-music-btn">♫ Play birthday music</button>
+  <p id="birthdayMusicHint" class="tiny birthday-music-hint">Birthday music will start automatically when the celebration opens. If your browser blocks autoplay, tap the music button once.</p>
+    <button id="blowCandlesBtn" class="primary">Blow the candles 💨</button>
+    <button id="cutCakeBtn" class="primary hidden">Cut the cake 🎂</button>
+  </div>
+  <p class="tiny birthday-hint">A little birthday magic, made just for you ♡</p>
+  <button id="enterBtn" class="secondary birthday-enter">ENTER MY UNIVERSE ❤️</button>
+</section>
+<div id="app" class="hidden">
+<header class="topbar"><a class="brand" href="#" data-home><span class="brand-pink">♡ THE DEVI JI</span> <span class="brand-white">CHRONICLES</span></a><nav>
+<a href="#home">Home</a><a href="#seasons">Our Seasons</a><a href="#notes">Love Notes</a><a href="#friends">Friends' Wishes</a><a href="#surprises">Surprises</a><a href="#forever">Forever</a>
+</nav><button id="musicToggle" class="music-toggle" aria-label="Toggle music">♫ <span>Music off</span></button></header>
+<main>
+<section id="home" class="hero">
+  <div id="heroMedia" class="hero-media" aria-hidden="true"></div>
+  <div class="hero-copy"><p class="eyebrow">One Princess. Unlimited Nakhre. Endless Pyaar</p><h1>Welcome to your<br><em>little universe,</em><br><span id="heroName">Bhavuuu</span> ❣️</h1>
+  <p id="heroSubtitle">Every little memory has a place here. Every song has a reason. And every page says the same thing: you are loved.</p>
+  <div class="actions"><button class="primary" id="browseBtn">♡ Explore our story</button><button class="secondary" id="randomBtn">Make me smile ✨</button></div></div>
+  <div class="hero-art"><div class="moon">♡</div><div class="doodle-note">you + me<br>= my favourite<br>plot twist</div><span class="spark s1">✦</span><span class="spark s2">✧</span><span class="spark s3">♡</span></div>
+</section>
+<section id="seasons" class="section"><div class="section-head"><div><p class="eyebrow">A OMVI ORIGINALS</p><h2>Browse the chapters</h2></div><span class="hand">pick your episode ↘</span></div><div id="seasonGrid" class="season-grid"></div></section>
+<section id="episodeView" class="section hidden"><div class="section-head"><div><p class="eyebrow" id="episodeKicker">NOW PLAYING</p><h2 id="episodeTitle">Episode title</h2><p id="episodeDesc" class="muted"></p></div><button id="backSeasons" class="secondary">← All chapters</button></div><div id="mediaGrid" class="media-grid"></div></section>
+<section id="notes" class="section soft"><div class="section-head"><div><p class="eyebrow">OPEN WHENEVER YOU NEED A SMILE</p><h2>Little love notes</h2></div><span class="hand">sealed with a hug ♡</span></div><div id="notesGrid" class="notes-grid"></div></section>
+<section id="friends" class="section"><div class="section-head"><div><p class="eyebrow">YOUR PEOPLE, YOUR CHEERING SQUAD</p><h2>Friends' wishes</h2></div></div><div id="friendsGrid" class="friends-grid"><p class="muted">Their wishes will appear here when you add them in config.js.</p></div></section>
+<section id="surprises" class="section surprise"><p class="eyebrow">A LITTLE SOMETHING</p><h2>Curiosity looks cute on you.</h2><p>There might be tiny secrets tucked around this universe.</p><button id="surpriseBtn" class="primary">Find a secret ✨</button><p id="surpriseText" class="surprise-text" aria-live="polite"></p><div class="awards"><span>🏆 World's Cutest Human</span><span>💌 CEO of Stealing My Heart</span><span>🎀 Professional Nakhre Expert</span></div></section>
+<section id="forever" class="section forever"><p class="eyebrow">THE LAST CHAPTER ISN'T REALLY THE LAST</p><h2>Our Forever Chapter ❤️</h2><p>More silly fights. More tiny adventures. More birthdays. More choosing each other.</p><button id="proposalBtn" class="primary">Open the final letter 💍</button></section>
+<section id="heartNote" class="section heart-note hidden"><p id="heartEyebrow" class="eyebrow">OPTIONAL · ONLY IF YOU FEEL LIKE IT</p><h2 id="heartTitle">One Little Thing From My Heart ❤️</h2><p id="heartSectionText">A small, honest note. Read it whenever you are ready — no pressure at all.</p><button id="heartOpenBtn" class="secondary">Open the note 🤍</button></section>
+</main>
+<footer>Made slowly, lovingly, and with ridiculous amounts of love for <span data-name>My Devi Ji</span> ❣️</footer>
+</div>
+<div id="viewer" class="viewer hidden" role="dialog" aria-modal="true" aria-label="Memory viewer">
+<button class="close" id="closeViewer" aria-label="Close">×</button><button class="view-prev" id="prevMedia" aria-label="Previous">‹</button>
+<div class="viewer-content"><div id="viewerMedia" class="viewer-media"></div><div class="viewer-caption"><p id="viewerCaption"></p><small id="viewerSong"></small><p id="viewerMessage"></p></div></div>
+<button class="view-next" id="nextMedia" aria-label="Next">›</button>
+</div>
+<div id="letterModal" class="modal hidden" role="dialog" aria-modal="true"><div class="letter"><button class="close" id="closeLetter">×</button><div class="envelope">💌</div><p class="eyebrow">A NOTE FOR YOU</p><p id="letterText"></p></div></div>
+<div id="proposalModal" class="modal hidden" role="dialog" aria-modal="true"><div class="proposal-card"><button class="close" id="closeProposal">×</button><div class="ring">💍</div><p class="eyebrow">ONE LAST QUESTION...</p><h2>My Bhavuuu ❣️</h2><p id="proposalText"></p><div class="actions centered"><button id="yesBtn" class="primary">HAAN JI, HAMESHA! ❤️</button><button id="hugBtn" class="secondary">PEHLE EK TIGHT HUG! 🥺</button></div><p id="proposalResponse" class="response"></p><div id="yesSurprise" class="yes-surprise hidden" role="status" aria-live="polite"></div></div></div>
+<div id="heartWarnModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="heartWarnTitle"><div class="heart-warn-card"><div class="warn-icon">⚠️</div><h3 id="heartWarnTitle">Warning, Bhavuuu</h3><p id="heartWarnText"></p><div class="actions centered"><button id="heartContinueBtn" class="primary">Continue ❤️</button><button id="heartBackBtn" class="secondary">Not now</button></div></div></div>
+<div id="heartNoteModal" class="modal hidden" role="dialog" aria-modal="true" aria-label="One little thing from my heart"><div class="letter heart-letter"><button class="close" id="closeHeartNote" aria-label="Close">×</button><div class="envelope">🤍</div><p class="eyebrow">ONE LITTLE THING FROM MY HEART</p><p id="heartNoteText"></p></div></div>
+<audio id="audioPlayer" preload="none"></audio>
+<script src="config.js"></script><script src="app.js"></script>
+</body></html>
